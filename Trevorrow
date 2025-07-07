@@ -45,6 +45,37 @@
       border-radius: 5px;
       cursor: pointer;
     }
+.venom-container {
+  width: 200px; height: 200px;
+  overflow: visible;
+  position: relative;
+}
+
+.venom {
+  width: 100%;
+  height: auto;
+}
+
+.venom #drop {
+  animation: drip 3s infinite ease-in-out;
+  transform-origin: center bottom;
+}
+
+@keyframes drip {
+  0% {
+    transform: scaleY(1) translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: scaleY(1.5) translateY(20px);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scaleY(1) translateY(0);
+    opacity: 1;
+  }
+}
+
   </style>
 </head>
 <body>
